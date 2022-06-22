@@ -1,0 +1,76 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.main {
+    padding: 0 1rem;
+    .main-txt {
+        padding: 0 2.5rem;
+        margin-bottom: 2rem;
+        h3 {
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: $neutralGray;
+            span {
+                font-weight: 700;
+                color: black;
+            }
+        }
+        p {
+            font-size: 70%;
+        }
+    }
+
+    #form-section {
+        @include flexCenter(column);
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        .input {
+            @include flexCenter((column));
+            .input-email {
+                border: 1px $secondaryPaleBlue solid;
+                border-radius: 20px;
+                padding: 0.7rem 7rem 0.7rem 2rem;
+                margin-bottom: .5rem;
+            }
+            .input-email::placeholder {
+                color: $neutralGray;
+                opacity: .5;
+            }
+            // error styles
+            .input-email-error {
+                border: 1px $secondaryLightRed solid;
+            }
+            #error-msg {
+                color: $secondaryLightRed;
+                font-size: .7rem;
+                margin-bottom: 1.5rem;
+                display: none;
+            }
+        }
+        .notify-btn {
+            border: none;
+            border-radius: 20px;
+            padding: 0.7rem 7.2rem;
+            color: white;
+            background-color: $primaryBlue;
+            box-shadow: 1px 6px 15px grey;
+            cursor: pointer;
+        }
+        .notify-btn:hover {
+            opacity: .9;
+        }
+
+    }
+
+    .dashboard-img {
+        margin-bottom: 7rem;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

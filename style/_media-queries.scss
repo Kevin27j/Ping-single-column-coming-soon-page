@@ -1,0 +1,29 @@
+@media screen and (min-width: $breakpoint-tablet) {
+    .main {
+        padding: 0 8rem;
+        .main-txt {
+            padding: 0;
+            font-size: 30px;
+        }
+        #form-section {
+            @include flexCenter(row);
+            .input {
+                .input-email {
+                    margin-bottom: 0;
+                }       
+            }
+            .notify-btn {
+                padding: .7rem 4rem;
+                overflow: hidden;
+                white-space: nowrap; 
+                margin-left: 1rem;
+            }         
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+    .main {
+        padding: 0 17rem;
+    }
+}

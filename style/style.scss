@@ -1,0 +1,19 @@
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+//font-family: 'Libre Franklin', sans-serif;
+
+@import './variables';
+@import './logo';
+@import './main';
+@import './footer';
+@import'./media-queries';
+
+body {
+    @include flexCenter(column);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: $bodyFontSize;
+    font-family: 'Libre Franklin', sans-serif;
+    }

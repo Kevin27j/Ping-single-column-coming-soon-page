@@ -1,0 +1,21 @@
+.footer {
+    .contact-links {
+        margin-bottom: 1.5rem;
+        i {
+            padding: .5rem;
+            margin-right: 1rem;
+            width: 20px;
+            border: 1px solid $secondaryPaleBlue;
+            border-radius: 50%;
+            color: $primaryBlue;
+        }
+        i:hover {
+            color: white;
+            background-color: $primaryBlue;
+        }
+    }
+    .copyright {
+        color: $neutralGray;
+        font-size: .7rem;
+    }
+}
